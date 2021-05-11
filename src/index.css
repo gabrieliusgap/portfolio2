@@ -1,13 +1,509 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    padding: 0;
+}
+.backGround{
+    position: absolute;
+    opacity: 0.67;
+    z-index: 1;
+    background-image: url("https://image.freepik.com/free-photo/green-smoke-abstract-black-backgroud-design-darkness-concept_55716-3104.jpg");
+    background-position: center;
+    background-size: cover;
+
+    height: 820px;
+    width: 100%;
+}
+.App{
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 820px;
+
+
+}
+.toolbar{
+    width: 100%;
+    height: 50px;
+    background-color: forestgreen;
+    border: #304530 solid 2px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+
+}
+.toolbarHolder{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.toolbarHolder a{
+    width: 100%;
+    margin: 5px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+    color: #dedede;
+}
+.toolbarHolder a:hover{
+    transform: scale(1.1);
+    color: #0a6901;
+}
+.footer{
+    width: 100%;
+    display: flex;
+    align-self: flex-end;
+    justify-content: center;
+
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 25px;
+    color: #dedede;
+}
+.footer a{
+    margin: 5px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+    color: #dedede;
+}
+.footer a:hover{
+    transform: scale(1.1);
+    color: #0a6901;
+}
+.innertext{
+    font-size: 50px;
+    color: yellow;
+    font-weight: bold;
+
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.BB-block {
+
+    width: 148px;
+    height: 163px;
+    border: .125rem solid #fff;
+    background: linear-gradient(to bottom right,#4ea76d 20%,#1f4c21 75%);
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.Blet{
+    font-weight: bold;
+    font-size: 80px;
+    color:  #fff;
+    align-self: center;
+    margin: 10px;
+
+}
+.Bnum{
+    font-weight: bold;
+    font-size: 20px;
+    color:  #fff;
+    align-self: flex-end;
+
+}
+.Bnam{
+    font-weight: normal;
+    font-size: 15px;
+    color:  #fff;
+    align-self: start;
+    margin:  0px 10px ;
+
+}
+.Bmas{
+    font-weight: normal;
+    font-size: 10px;
+    color:  #fff;
+    align-self: start;
+    margin:  0px 10px ;
+
+}
+
+.BB-block-small {
+    width: 45px;
+    height: 55px;
+    border: .125rem solid #fff;
+    background: linear-gradient(to bottom right,#4ea76d 20%,#1f4c21 75%);
+    display: flex;
+    flex-direction: column;
+    padding: 1px;
+}
+.BB-block-small:hover {
+    cursor: grab;
+}
+.Blet2{
+    font-weight: bold;
+    font-size: 25px;
+    color:  #fff;
+    align-self: center;
+    margin: 1px;
+
+}
+.Bnum2{
+    font-weight: bold;
+    font-size: 10px;
+    color:  #fff;
+    align-self: flex-end;
+
+}
+.Bnam2{
+    font-weight: normal;
+    font-size: 8px;
+    color:  #fff;
+    align-self: start;
+
+
+}
+.Bmas2{
+    font-weight: normal;
+    font-size: 5px;
+    color:  #fff;
+    align-self: start;
+
+
+}
+
+.BB-block-very-small {
+    width: 30px;
+    height: 35px;
+    border: .125rem solid #fff;
+    background: linear-gradient(to bottom right,#4ea76d 20%,#1f4c21 75%);
+    display: flex;
+    flex-direction: column;
+    padding: 1px;
+}
+.BB-block-very-small:hover {
+    cursor: grab;
+    transform: scale(1.1);
+}
+.Blet3{
+    font-weight: bold;
+    font-size: 15px;
+    color:  #fff;
+    align-self: center;
+    margin: 1px;
+
+}
+.Bnum3{
+    font-weight: bold;
+    font-size: 6px;
+    color:  #fff;
+    align-self: flex-end;
+
+}
+.Bnam3{
+    font-weight: normal;
+    font-size: 6px;
+    color:  #fff;
+    align-self: start;
+
+
+}
+.Bmas3{
+    font-weight: normal;
+    font-size: 5px;
+    color:  #fff;
+    align-self: start;
+
+
+}
+
+
+.smallHolder{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 5px;
+}
+.smallHolder2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 5px;
+    font-size: 15px;
+}
+.startHolder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+.nineHolder{
+    display: flex;
+    flex-direction: column;
+}
+.threeholder{
+    display: flex;
+    flex-direction: row;
+}
+.emptyR{
+    /*position: absolute;*/
+    /*position: fixed;*/
+    font-family: Serif;
+    width: 150px;
+    height: 165px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: end;
+    font-size: 80px;
+    color: #dedede;
+    font-weight: bolder;
+    letter-spacing: 4px;
+    padding: 10px;
+}
+.emptyL{
+    /*position: absolute;*/
+    /*position: fixed;*/
+    font-family: Serif;
+    width: 150px;
+    height: 165px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: start;
+    font-size: 80px;
+    color: #dedede;
+    font-weight: bolder;
+    letter-spacing: 4px;
+    padding: 10px;
+}
+.tarps{
+    width: 15px;
+}
+.smaller{
+    font-size: 15px;
+}
+
+.innerrTools{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: 25px;
+    color: #dedede;
+
+}
+.innerContacts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: 25px;
+    color: #dedede;
+
+}
+.innerContacts i{
+
+    color: #11c601;
+
+
+}
+.innerContacts i:hover{
+transform: scale(1.1);
+    color: #0b4100;
+
+
+}
+.innerProjects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: 25px;
+    color: #dedede;
+
+}
+.innerAbout{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: 20px;
+    color: #dedede;
+
+}
+.innerSafety{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: 20px;
+    color: #dedede;
+
+}
+.innerSafety img{
+    width: 350px;
+}
+
+.toolbar img{
+    height: 65px;
+}
+
+.animHolder{
+    position: relative;
+
+}
+#BR{
+    position: absolute;
+    animation-duration: 12s;
+    animation-name: anim1;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    animation-direction: inherit;
+    animation-delay: 0s;
+}
+@keyframes anim1 {
+    0%{
+        display:none;
+        left: -150px;
+        top: -40px;
+        transform: scale(1.5);
+        opacity: 0;
+    }
+    25%{
+        display:flex;
+        left: 0px;
+        top: 0px;
+        transform: scale(1);
+        opacity:1;
+    }
+    100%{
+        display:flex;
+        left: 0px;
+        top: 0px;
+        transform: scale(1);
+        opacity: 1;
+    }
+
+}
+#GA{
+    position: absolute;
+    animation-duration: 12s;
+    animation-name: anim2;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    animation-direction: inherit;
+    animation-delay: 0s;
+}
+@keyframes anim2 {
+    0%{
+
+        display:none;
+        left: -150px;
+        top: -40px;
+        transform: scale(1.5);
+        opacity: 0;
+    }
+    25%{
+        display:none;
+        left: -150px;
+        top: -40px;
+        transform: scale(1.5);
+        opacity: 0;
+    }
+    50%{
+        display:flex;
+        left: 0px;
+        top: 0px;
+        transform: scale(1);
+        opacity: 1;
+    }
+    100%{
+        display:flex;
+        left: 0px;
+        top: 0px;
+        transform: scale(1);
+        opacity: 1;
+    }
+
+}
+#CO{
+    position: absolute;
+    animation-duration: 12s;
+    animation-name: anim3;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    animation-direction: inherit;
+    animation-delay: 0s;
+}
+@keyframes anim3 {
+    0%{
+        display:none;
+        left: -150px;
+        top: -40px;
+        transform: scale(1.5);
+        opacity: 0;
+    }
+    50%{
+        display:none;
+        left: -150px;
+        top: -40px;
+        transform: scale(1.5);
+        opacity: 0;
+    }
+    75%{
+        display:flex;
+        left: 0px;
+        top: 0px;
+        transform: scale(1);
+        opacity: 1;
+    }
+    100%{
+        display:flex;
+        left: 0px;
+        top: 0px;
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+.anim4{
+    animation-duration: 12s;
+    animation-name: anim4;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    animation-direction: inherit;
+    animation-delay: 0s;
+}
+@keyframes anim4 {
+    0%{
+        display:none;
+        opacity: 0;
+        transform: scale(1.5);
+    }
+    75%{
+        display:none;
+        opacity: 0;
+        transform: scale(1.2);
+    }
+    100%{
+        display:flex;
+        opacity: 1;
+        transform: scale(1);
+    }
+
+}
+.t3Holder{
+    justify-self: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+  }
+.col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 650px;
 }
