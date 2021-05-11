@@ -24,7 +24,7 @@ function App() {
 
                       <StartPage/>
                   </Route>
-                  <Route path="/portfolio">
+                  <Route path="/portfolio2">
 
                       <StartPage/>
                   </Route>
