@@ -507,3 +507,38 @@ transform: scale(1.1);
     align-items: center;
     width: 650px;
 }
+.col2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.projectHolder{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.reactGame {
+    width: 250px;
+}
+.chickenGame{
+    width: 250px;
+}
+.shoppingList{
+    width: 250px;
+}
+.hangMan{
+    width: 250px;
+}
+.projectHolder div{
+    margin: 20px;
+}
+.projectHolder div:hover{
+    transform: scale(1.05);
+}
+
+.projectHolder div img{
+    width: 100%;
+    height: 100%;
+    margin: 20px;
+}

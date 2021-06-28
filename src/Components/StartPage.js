@@ -1,9 +1,42 @@
 import React from 'react';
 import BBblock from "./BBblock";
+import { AiFillPlayCircle } from "react-icons/ai";
+import {SiGmail} from "react-icons/si";
+import ReactAudioPlayer from 'react-audio-player';
+import {useRef} from "react"
+import AudioFile from "../AudioFiles/breaking-bad-theme.mp3"
+
 
 function StartPage() {
+    var audio = new Audio("../AudioFiles/breaking-bad-theme.mp3")
+    const element = useRef();
+
+    // function Play(){
+    //     console.log("play pressed")
+    //     // element.current.play
+    //
+    // }
+
+    console.log(element.current)
     return (
-        <div className="startHolder">
+        <div className="col2">
+            <div onClick={()=> audio.play() }>
+                <AiFillPlayCircle color="#11c601">
+
+                </AiFillPlayCircle>
+                <ReactAudioPlayer ref={(element)}
+
+                    src={AudioFile}
+
+
+
+
+                />
+
+            </div>
+
+            <div className="startHolder">
+
             <div className="nineHolder">
                 <div className="threeholder">
                     <div className="emptyR anim4">Ga</div>
@@ -43,7 +76,7 @@ function StartPage() {
                 </div>
 
             </div>
-            <audio src="http://breakingbad.imarun.com/images/breaking-bad-theme.mp3" autoPlay="true"> </audio>
+        </div><audio src="http://breakingbad.imarun.com/images/breaking-bad-theme.mp3" autoPlay="false"/>
         </div>
     );
 }
